@@ -51,8 +51,10 @@ namespace Piano
         private static void PlayMidiNote(int note)
         {
             FreePlaycl.builder.Command = ChannelCommand.NoteOn;
+// Controls MIDI Channel 10 (AKA 9) is percussion
             FreePlaycl.builder.MidiChannel = 9;
             FreePlaycl.builder.Data1 = note;
+// Controls velocity (loudness) 127 is the highest
             FreePlaycl.builder.Data2 = 127;
             FreePlaycl.builder.Build();
             FreePlaycl.outDevice.Send(FreePlaycl.builder.Result);
