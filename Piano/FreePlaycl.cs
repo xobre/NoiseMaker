@@ -3,6 +3,7 @@ using System.Threading;
 using Sanford.Multimedia.Midi;
 using System.Timers;
 
+
 namespace Piano
 {
     class FreePlaycl
@@ -131,7 +132,7 @@ namespace Piano
             case (ConsoleKey.O): Console.Beep(950, 50); break;
             case (ConsoleKey.L): Console.Beep(975, 50); break;
             case (ConsoleKey.P): Console.Beep(1000, 50); break;
-            case (ConsoleKey.X): timer.Stop(); TitlePage.Title(); break;
+            case (ConsoleKey.X): TitlePage.Title(); break;
         }
             while (true)
             {
