@@ -37,6 +37,7 @@ namespace Piano
             if (CharSong[0] == 's') SuperMario();
             if (CharSong[0] == 'w') StarWars();
             if (CharSong[0] == 'h') HappyBirthday();
+            if (CharSong[0] == 'x') TitlePage.Title();
             else Console.Clear(); WhichSong();
         }
         public static void MissionImpossible()
